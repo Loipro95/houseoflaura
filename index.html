@@ -3,78 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House of Laura - Accueil & Tome 1</title>
+    <title>House of Laura - Tome 2</title>
     <style>
         body { background-color: #050505; color: #ffffff; font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; margin: 0; }
         .container { width: 100%; max-width: 800px; display: flex; flex-direction: column; align-items: center; gap: 40px; }
         .slide { width: 100%; background: #121212; padding: 30px; border-radius: 25px; border: 1px solid #333; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); box-sizing: border-box; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; width: 100%; }
-        .card { background: #1a1a1a; padding: 20px; border-radius: 20px; border: 1px solid #444; }
         .btn { background: #ff007f; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 20px; transition: 0.3s; }
         .btn:hover { background: #ff3399; }
         .btn-secondary { background: #444; margin-left: 10px; }
         .btn-secondary:hover { background: #666; }
         img { width: 100%; border-radius: 15px; }
-        h1 { color: #ff007f; letter-spacing: 2px; }
+        h2 { color: #ff007f; font-size: 2.5em; margin-bottom: 10px; }
+        p { font-size: 1.2em; color: #ccc; }
     </style>
 </head>
 <body>
     <div class="container">
         
-        <div class="slide" id="hub">
-            <h1>HOUSE OF LAURA</h1>
-            <div class="grid">
-                <div class="card">
-                    <img src="cover hol.png" alt="Couverture Tome 1">
-                    <br><a href="#page1" class="btn">Lire Tome 1</a>
-                </div>
-                <div class="card">
-                    <img src="cover tome 2 hol.png" alt="Couverture Tome 2">
-                    <br><a href="tome2.html" class="btn">Lire Tome 2</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="slide" id="page1">
-            <img src="page 1 hol.png" alt="Page 1">
-            <br><a href="#page2" class="btn">Suivant</a>
-        </div>
-
-        <div class="slide" id="page2">
-            <img src="page 2 hol.png" alt="Page 2">
-            <br><a href="#page3" class="btn">Suivant</a>
-        </div>
-
-        <div class="slide" id="page3">
-            <img src="page 3 hol.png" alt="Page 3">
-            <br><a href="#page4" class="btn">Suivant</a>
-        </div>
-
-        <div class="slide" id="page4">
-            <img src="page 4 hol.png" alt="Page 4">
-            <br><a href="#page5" class="btn">Suivant</a>
-        </div>
-
-        <div class="slide" id="page5">
-            <img src="page 5 hol.png" alt="Page 5">
-            <br><a href="#page6" class="btn">Suivant</a>
-        </div>
-
-        <div class="slide" id="page6">
-            <img src="page 6 hol.png" alt="Page 6">
-            <br><a href="#page7" class="btn">Suivant</a>
-        </div>
-
-        <div class="slide" id="page7">
-            <img src="page 7 hol.png" alt="Page 7">
-            <br><a href="#page8" class="btn">Suivant</a>
-        </div>
-
-        <div class="slide" id="page8">
-            <img src="page 8 hol.png" alt="Page 8">
+        <!-- COVER TOME 2 -->
+        <div class="slide" id="cover">
+            <img src="cover tome 2 hol.png" alt="Couverture Tome 2">
             <br>
-            <a href="tome2.html" class="btn">Lire Tome 2</a>
-            <a href="#hub" class="btn btn-secondary">Retour Accueil</a>
+            <a href="#page1" class="btn">Commencer le Tome 2</a>
+            <a href="index.html" class="btn btn-secondary">Retour Accueil</a>
+        </div>
+        
+        <!-- PAGE 1 TOME 2 -->
+        <div class="slide" id="page1">
+            <img src="page 1 tome 2 hol.png" alt="Page 1 Tome 2">
+            <br>
+            <a href="#page2" class="btn">Suivant</a>
+            <a href="#cover" class="btn btn-secondary">Retour Cover</a>
+        </div>
+
+        <!-- PAGE 2 TOME 2 -->
+        <div class="slide" id="page2">
+            <img src="page 2 tome 2 hol.png" alt="Page 2 Tome 2">
+            <br>
+            <a href="#page3" class="btn">Suivant</a>
+            <a href="#page1" class="btn btn-secondary">Retour</a>
+        </div>
+
+        <!-- PAGE 3 TOME 2 -->
+        <div class="slide" id="page3">
+            <img src="page 3 tome 2 hol.png" alt="Page 3 Tome 2">
+            <br>
+            <a href="#page4" class="btn">Suivant</a>
+            <a href="#page2" class="btn btn-secondary">Retour</a>
+        </div>
+
+        <!-- PAGE 4 TOME 2 -->
+        <div class="slide" id="page4">
+            <img src="page 4 tome 2 hol.png" alt="Page 4 Tome 2">
+            <br>
+            <a href="#page5" class="btn">Suivant</a>
+            <a href="#page3" class="btn btn-secondary">Retour</a>
+        </div>
+
+        <!-- PAGE 5 TOME 2 -->
+        <div class="slide" id="page5">
+            <img src="page 5 tome 2 hol.png" alt="Page 5 Tome 2">
+            <br>
+            <a href="#page6" class="btn">Suivant</a>
+            <a href="#page4" class="btn btn-secondary">Retour</a>
+        </div>
+
+        <!-- PAGE 6 TOME 2 -->
+        <div class="slide" id="page6">
+            <img src="page 6 tome 2 hol.png" alt="Page 6 Tome 2">
+            <br>
+            <a href="#page7" class="btn">Suivant</a>
+            <a href="#page5" class="btn btn-secondary">Retour</a>
+        </div>
+
+        <!-- PAGE 7 TOME 2 -->
+        <div class="slide" id="page7">
+            <img src="page 7 tome 2 hol.png" alt="Page 7 Tome 2">
+            <br>
+            <a href="#page8" class="btn">Suivant</a>
+            <a href="#page6" class="btn btn-secondary">Retour</a>
+        </div>
+
+        <!-- PAGE 8 TOME 2 -->
+        <div class="slide" id="page8">
+            <img src="page 8 tome 2 hol.png" alt="Page 8 Tome 2">
+            <br>
+            <a href="#tome3" class="btn">Suivant</a>
+            <a href="#page7" class="btn btn-secondary">Retour</a>
+        </div>
+        
+        <!-- ANNONCE TOME 3 & DISCORD -->
+        <div class="slide" id="tome3">
+            <h2>TOME 3 DISPONIBLE EN AOÛT</h2>
+            <p>Restez actifs sur le Discord pour ne rien manquer !</p>
+            <a href="https://discord.gg/qj8JbVSZqQ" target="_blank" class="btn">Rejoindre le Discord</a>
+            <br><br>
+            <a href="index.html" class="btn btn-secondary">Retour Accueil</a>
         </div>
 
     </div>

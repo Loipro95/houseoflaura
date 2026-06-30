@@ -7,6 +7,7 @@
         body { background-color: #050505; color: #ffffff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; }
         .slide { width: 100%; max-width: 800px; background: #121212; padding: 20px; border-radius: 20px; margin-bottom: 20px; text-align: center; }
         .btn { background: #ff007f; color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
+        .btn:hover { background: #ff3399; }
         img { width: 100%; border-radius: 10px; }
         .grid { display: flex; gap: 20px; justify-content: center; }
     </style>
@@ -15,12 +16,12 @@
     <div class="slide" id="hub">
         <h1>HOUSE OF LAURA</h1>
         <div class="grid">
-            <div><img src="cover hol.png" style="width:200px"><br><a href="#tome1" class="btn">Lire Tome 1</a></div>
-            <div><img src="cover tome 2 hol.png" style="width:200px"><br><a href="tome2.html" class="btn">Lire Tome 2</a></div>
+            <div><img src="Couverture hol.png" style="width:200px"><br><a href="#tome1" class="btn">Lire Tome 1</a></div>
+            <div><img src="Ouvrage du tome 2 hol.png" style="width:200px"><br><a href="tome2.html" class="btn">Lire Tome 2</a></div>
         </div>
     </div>
 
-    <div class="slide" id="tome1"><img src="cover hol.png"><br><a href="#p1" class="btn">Commencer</a></div>
+    <div class="slide" id="tome1"><img src="Couverture hol.png"><br><a href="#p1" class="btn">Commencer</a></div>
     <div class="slide" id="p1"><img src="page 1 hol.png"><br><a href="#p2" class="btn">Suivant</a></div>
     <div class="slide" id="p2"><img src="page 2 hol.png"><br><a href="#p3" class="btn">Suivant</a></div>
     <div class="slide" id="p3"><img src="page 3 hol.png"><br><a href="#p4" class="btn">Suivant</a></div>
@@ -28,6 +29,11 @@
     <div class="slide" id="p5"><img src="page 5 hol.png"><br><a href="#p6" class="btn">Suivant</a></div>
     <div class="slide" id="p6"><img src="page 6 hol.png"><br><a href="#p7" class="btn">Suivant</a></div>
     <div class="slide" id="p7"><img src="page 7 hol.png"><br><a href="#p8" class="btn">Suivant</a></div>
-    <div class="slide" id="p8"><img src="page 8 hol.png"><br><a href="#hub" class="btn">Retour Accueil</a></div>
+    
+    <div class="slide" id="p8">
+        <img src="page 8 hol.png"><br>
+        <a href="tome2.html" class="btn">Lire Tome 2</a>
+        <a href="#hub" class="btn" style="margin-left:10px;">Retour Accueil</a>
+    </div>
 </body>
 </html>

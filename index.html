@@ -3,104 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House of Laura - Tome 2</title>
+    <title>House of Laura - Accueil</title>
     <style>
-        body { background-color: #050505; color: #ffffff; font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; margin: 0; }
-        .container { width: 100%; max-width: 800px; display: flex; flex-direction: column; align-items: center; gap: 40px; }
-        .slide { width: 100%; background: #121212; padding: 30px; border-radius: 25px; border: 1px solid #333; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); box-sizing: border-box; }
-        .btn { background: #ff007f; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 20px; transition: 0.3s; }
+        body { background-color: #050505; color: #ffffff; font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; margin: 0; min-height: 100vh; justify-content: center; }
+        .container { width: 100%; max-width: 600px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .card { width: 100%; background: #121212; padding: 40px; border-radius: 25px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); box-sizing: border-box; }
+        h1 { color: #ff007f; font-size: 3em; margin-bottom: 10px; font-weight: 700; }
+        p { font-size: 1.2em; color: #ccc; margin-bottom: 30px; }
+        .btn-group { display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 300px; margin: 0 auto; }
+        .btn { background: #ff007f; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: 0.3s; text-align: center; }
         .btn:hover { background: #ff3399; }
-        .btn-secondary { background: #444; margin-left: 10px; }
-        .btn-secondary:hover { background: #666; }
-        img { width: 100%; border-radius: 15px; }
-        h2 { color: #ff007f; font-size: 2.5em; margin-bottom: 10px; }
-        p { font-size: 1.2em; color: #ccc; }
+        .btn-discord { background: #5865F2; }
+        .btn-discord:hover { background: #6f7cff; }
     </style>
 </head>
 <body>
     <div class="container">
-        
-        <!-- COVER TOME 2 -->
-        <div class="slide" id="cover">
-            <img src="cover tome 2 hol.png" alt="Couverture Tome 2">
-            <br>
-            <a href="#page1" class="btn">Commencer le Tome 2</a>
-            <a href="index.html" class="btn btn-secondary">Retour Accueil</a>
+        <div class="card">
+            <h1>House of Laura</h1>
+            <p>Bienvenue sur le site officiel ! Choisissez votre tome ou rejoignez la communauté :</p>
+            
+            <div class="btn-group">
+                <!-- Si tu as un fichier tome1.html, sinon tu pourras le créer plus tard -->
+                <a href="tome1.html" class="btn">Lire le Tome 1</a>
+                
+                <!-- Lien vers ton fichier tome2.html -->
+                <a href="tome2.html" class="btn">Lire le Tome 2</a>
+                
+                <!-- Lien direct vers ton Discord -->
+                <a href="https://discord.gg/qj8JbVSZqQ" target="_blank" class="btn btn-discord">Rejoindre le Discord</a>
+            </div>
         </div>
-        
-        <!-- PAGE 1 TOME 2 -->
-        <div class="slide" id="page1">
-            <img src="page 1 tome 2 hol.png" alt="Page 1 Tome 2">
-            <br>
-            <a href="#page2" class="btn">Suivant</a>
-            <a href="#cover" class="btn btn-secondary">Retour Cover</a>
-        </div>
-
-        <!-- PAGE 2 TOME 2 -->
-        <div class="slide" id="page2">
-            <img src="page 2 tome 2 hol.png" alt="Page 2 Tome 2">
-            <br>
-            <a href="#page3" class="btn">Suivant</a>
-            <a href="#page1" class="btn btn-secondary">Retour</a>
-        </div>
-
-        <!-- PAGE 3 TOME 2 -->
-        <div class="slide" id="page3">
-            <img src="page 3 tome 2 hol.png" alt="Page 3 Tome 2">
-            <br>
-            <a href="#page4" class="btn">Suivant</a>
-            <a href="#page2" class="btn btn-secondary">Retour</a>
-        </div>
-
-        <!-- PAGE 4 TOME 2 -->
-        <div class="slide" id="page4">
-            <img src="page 4 tome 2 hol.png" alt="Page 4 Tome 2">
-            <br>
-            <a href="#page5" class="btn">Suivant</a>
-            <a href="#page3" class="btn btn-secondary">Retour</a>
-        </div>
-
-        <!-- PAGE 5 TOME 2 -->
-        <div class="slide" id="page5">
-            <img src="page 5 tome 2 hol.png" alt="Page 5 Tome 2">
-            <br>
-            <a href="#page6" class="btn">Suivant</a>
-            <a href="#page4" class="btn btn-secondary">Retour</a>
-        </div>
-
-        <!-- PAGE 6 TOME 2 -->
-        <div class="slide" id="page6">
-            <img src="page 6 tome 2 hol.png" alt="Page 6 Tome 2">
-            <br>
-            <a href="#page7" class="btn">Suivant</a>
-            <a href="#page5" class="btn btn-secondary">Retour</a>
-        </div>
-
-        <!-- PAGE 7 TOME 2 -->
-        <div class="slide" id="page7">
-            <img src="page 7 tome 2 hol.png" alt="Page 7 Tome 2">
-            <br>
-            <a href="#page8" class="btn">Suivant</a>
-            <a href="#page6" class="btn btn-secondary">Retour</a>
-        </div>
-
-        <!-- PAGE 8 TOME 2 -->
-        <div class="slide" id="page8">
-            <img src="page 8 tome 2 hol.png" alt="Page 8 Tome 2">
-            <br>
-            <a href="#tome3" class="btn">Suivant</a>
-            <a href="#page7" class="btn btn-secondary">Retour</a>
-        </div>
-        
-        <!-- ANNONCE TOME 3 & DISCORD -->
-        <div class="slide" id="tome3">
-            <h2>TOME 3 DISPONIBLE EN AOÛT</h2>
-            <p>Restez actifs sur le Discord pour ne rien manquer !</p>
-            <a href="https://discord.gg/qj8JbVSZqQ" target="_blank" class="btn">Rejoindre le Discord</a>
-            <br><br>
-            <a href="index.html" class="btn btn-secondary">Retour Accueil</a>
-        </div>
-
     </div>
 </body>
 </html>

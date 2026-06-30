@@ -2,42 +2,32 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House of Laura - Accueil & Tome 1</title>
+    <title>House of Laura - Accueil</title>
     <style>
-        body { background-color: #050505; color: #ffffff; font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; margin: 0; }
-        .container { width: 100%; max-width: 800px; display: flex; flex-direction: column; align-items: center; gap: 40px; }
-        .slide { width: 100%; background: #121212; padding: 30px; border-radius: 25px; border: 1px solid #333; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); box-sizing: border-box; }
-        .btn { background: #ff007f; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 20px; transition: 0.3s; }
-        .btn:hover { background: #ff3399; }
-        .btn-secondary { background: #444; margin-left: 10px; }
-        img { width: 100%; border-radius: 15px; }
-        h1 { color: #ff007f; }
+        body { background-color: #050505; color: #ffffff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .slide { width: 100%; max-width: 800px; background: #121212; padding: 20px; border-radius: 20px; margin-bottom: 20px; text-align: center; }
+        .btn { background: #ff007f; color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
+        img { width: 100%; border-radius: 10px; }
         .grid { display: flex; gap: 20px; justify-content: center; }
     </style>
 </head>
 <body>
-    <div class="container">
-        
-        <div class="slide" id="hub">
-            <h1>House of Laura</h1>
-            <div class="grid">
-                <div><img src="cover tome 1.png" style="width:150px"><br><a href="#tome1" class="btn">Lire Tome 1</a></div>
-                <div><img src="cover tome 2 hol.png" style="width:150px"><br><a href="tome2.html" class="btn">Lire Tome 2</a></div>
-            </div>
+    <div class="slide" id="hub">
+        <h1>HOUSE OF LAURA</h1>
+        <div class="grid">
+            <div><img src="cover hol.png" style="width:200px"><br><a href="#tome1" class="btn">Lire Tome 1</a></div>
+            <div><img src="cover tome 2 hol.png" style="width:200px"><br><a href="tome2.html" class="btn">Lire Tome 2</a></div>
         </div>
+    </div>
 
-        <div class="slide" id="tome1">
-            <img src="cover tome 1.png" alt="Couverture Tome 1">
-            <br>
-            <a href="#page1_t1" class="btn">Commencer le Tome 1</a>
-        </div>
-
-        <div class="slide" id="page1_t1">
-            <img src="page 1 tome 1.png" alt="Page 1 Tome 1">
-            <a href="#hub" class="btn btn-secondary">Retour Menu</a>
-        </div>
-        
-        </div>
+    <div class="slide" id="tome1"><img src="cover hol.png"><br><a href="#p1" class="btn">Commencer</a></div>
+    <div class="slide" id="p1"><img src="page 1 hol.png"><br><a href="#p2" class="btn">Suivant</a></div>
+    <div class="slide" id="p2"><img src="page 2 hol.png"><br><a href="#p3" class="btn">Suivant</a></div>
+    <div class="slide" id="p3"><img src="page 3 hol.png"><br><a href="#p4" class="btn">Suivant</a></div>
+    <div class="slide" id="p4"><img src="page 4 hol.png"><br><a href="#p5" class="btn">Suivant</a></div>
+    <div class="slide" id="p5"><img src="page 5 hol.png"><br><a href="#p6" class="btn">Suivant</a></div>
+    <div class="slide" id="p6"><img src="page 6 hol.png"><br><a href="#p7" class="btn">Suivant</a></div>
+    <div class="slide" id="p7"><img src="page 7 hol.png"><br><a href="#p8" class="btn">Suivant</a></div>
+    <div class="slide" id="p8"><img src="page 8 hol.png"><br><a href="#hub" class="btn">Retour Accueil</a></div>
 </body>
 </html>

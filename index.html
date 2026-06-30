@@ -4,24 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House of Laura - Manga Reader</title>
-
-    <meta property="og:title" content="House of Laura - Manga Reader">
-    <meta property="og:description" content="Découvrez le manga House of Laura en ligne !">
-    <meta property="og:image" content="https://rozuya.github.io/houseoflaura/cover%20hol.png">
-    <meta property="og:url" content="https://rozuya.github.io/houseoflaura/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Kanit:wght@800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * { box-sizing: border-box; }
         body { background-color: #080110; color: #ffffff; font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; align-items: center; margin: 0; padding: 40px 0; }
         .slide-container { width: 100%; max-width: 900px; min-height: 600px; background-color: #110520; border-radius: 16px; border: 2px solid rgba(255, 0, 127, 0.6); padding: 20px; display: flex; flex-direction: column; align-items: center; margin-bottom: 60px; }
-        .nav-overlay { margin-top: 20px; }
-        .btn-next { background: linear-gradient(45deg, #ff007f, #b90064); color: white; padding: 14px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; cursor: pointer; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 100%; }
+        .tome-card { background: #110520; padding: 15px; border-radius: 10px; border: 2px solid #ff007f; text-align: center; }
+        .btn-next { background: linear-gradient(45deg, #ff007f, #b90064); color: white; padding: 14px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; cursor: pointer; display: inline-block; margin: 10px; }
         .manga-page { width: 100%; display: flex; justify-content: center; align-items: center; }
         .manga-page img { max-width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); }
         .soon-title { font-family: 'Kanit', sans-serif; font-size: 80px; font-weight: 900; color: #ff007f; margin: 0; text-transform: uppercase; }
@@ -29,52 +18,59 @@
     </style>
 </head>
 <body>
-    <div class="slide-container" id="cover">
-        <div class="manga-page"><img src="cover hol.png" alt="Couverture"></div>
-        <div class="nav-overlay"><a href="#page1" class="btn-next">Commencer</a></div>
+
+    <!-- HUB (ACCUEIL) -->
+    <div class="slide-container" id="hub">
+        <h1>House of Laura</h1>
+        <div class="grid">
+            <div class="tome-card">
+                <img src="cover hol.png" alt="Tome 1">
+                <a href="#page1_t1" class="btn-next">Lire Tome 1</a>
+            </div>
+            <div class="tome-card">
+                <img src="cover tome 2 hol.png" alt="Tome 2">
+                <a href="#cover_t2" class="btn-next">Lire Tome 2</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOME 1 (8 PAGES) -->
+    <div class="slide-container" id="page1_t1"><div class="manga-page"><img src="page 1 hol.png"></div><a href="#page2_t1" class="btn-next">Suivant</a></div>
+    <div class="slide-container" id="page2_t1"><div class="manga-page"><img src="page 2 hol.png"></div><a href="#page3_t1" class="btn-next">Suivant</a></div>
+    <div class="slide-container" id="page3_t1"><div class="manga-page"><img src="page 3 hol.png"></div><a href="#page4_t1" class="btn-next">Suivant</a></div>
+    <div class="slide-container" id="page4_t1"><div class="manga-page"><img src="page 4 hol.png"></div><a href="#page5_t1" class="btn-next">Suivant</a></div>
+    <div class="slide-container" id="page5_t1"><div class="manga-page"><img src="page 5 hol.png"></div><a href="#page6_t1" class="btn-next">Suivant</a></div>
+    <div class="slide-container" id="page6_t1"><div class="manga-page"><img src="page 6 hol.png"></div><a href="#page7_t1" class="btn-next">Suivant</a></div>
+    <div class="slide-container" id="page7_t1"><div class="manga-page"><img src="page 7 hol.png"></div><a href="#page8_t1" class="btn-next">Suivant</a></div>
+    <div class="slide-container" id="page8_t1">
+        <div class="manga-page"><img src="page 8 hol.png"></div>
+        <div>
+            <a href="#hub" class="btn-next" style="background:#555;">Accueil</a>
+            <a href="#cover_t2" class="btn-next">Lire Tome 2</a>
+        </div>
+    </div>
+
+    <!-- TOME 2 -->
+    <div class="slide-container" id="cover_t2">
+        <div class="manga-page"><img src="cover tome 2 hol.png"></div>
+        <a href="#page1_t2" class="btn-next">Commencer Tome 2</a>
     </div>
     
-    <div class="slide-container" id="page1">
-        <div class="manga-page"><img src="page 1 hol.png" alt="Page 1"></div>
-        <div class="nav-overlay"><a href="#page2" class="btn-next">Suivant</a></div>
+    <div class="slide-container" id="page1_t2">
+        <div class="manga-page"><img src="page 1 tome 2 hol.png"></div>
+        <a href="#soon_t2" class="btn-next">Suivant</a>
     </div>
 
-    <div class="slide-container" id="page2">
-        <div class="manga-page"><img src="page 2 hol.png" alt="Page 2"></div>
-        <div class="nav-overlay"><a href="#page3" class="btn-next">Suivant</a></div>
-    </div>
-
-    <div class="slide-container" id="page3">
-        <div class="manga-page"><img src="page 3 hol.png" alt="Page 3"></div>
-        <div class="nav-overlay"><a href="#page4" class="btn-next">Suivant</a></div>
-    </div>
-
-    <div class="slide-container" id="page4">
-        <div class="manga-page"><img src="page 4 hol.png" alt="Page 4"></div>
-        <div class="nav-overlay"><a href="#page5" class="btn-next">Suivant</a></div>
-    </div>
-
-    <div class="slide-container" id="page5">
-        <div class="manga-page"><img src="page 5 hol.png" alt="Page 5"></div>
-        <div class="nav-overlay"><a href="#page6" class="btn-next">Suivant</a></div>
-    </div>
-
-    <div class="slide-container" id="page6">
-        <div class="manga-page"><img src="page 6 hol.png" alt="Page 6"></div>
-        <div class="nav-overlay"><a href="#page7" class="btn-next">Suivant</a></div>
-    </div>
-
-    <div class="slide-container" id="page7">
-        <div class="manga-page"><img src="page 7 hol.png" alt="Page 7"></div>
-        <div class="nav-overlay"><a href="#soon" class="btn-next">Suivant</a></div>
-    </div>
-
-    <div class="slide-container" id="soon">
+    <!-- SOON TOME 2 -->
+    <div class="slide-container" id="soon_t2">
         <div class="manga-page" style="flex-direction: column; padding: 40px 0; text-align: center;">
             <h2 class="soon-title">SOON</h2>
-            <p class="soon-subtitle">la suite arrive bientôt</p>
+            <p class="soon-subtitle">La suite du Tome 2 arrive bientôt !</p>
         </div>
-        <div class="nav-overlay"><a href="#cover" class="btn-next">Relire</a></div>
+        <div class="nav-overlay">
+            <a href="#hub" class="btn-next">Retour Accueil</a>
+        </div>
     </div>
+
 </body>
 </html>
